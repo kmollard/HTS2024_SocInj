@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- Bootstrap Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Connect to JQuery + popper.js-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <!-- My Style -->
+        <title>Bootstrap - Crash Course</title>
+        <link href="https://d1p5cqqchvbqmy.cloudfront.net/web2/release/mappedin-web.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="bg-danger text-white m-5 p-5 text-center"><h1>
+                Map of the Maggie Benson Centre
+            </h1></div>
+            <div data-key="<probably externalId, or skip>" id="mappedin-map"></div>
+
+                <script type="text/javascript">
+                    window.mappedin = {
+                        miKey: {
+                            id: "<your credentials>",
+                            key: "<your credentials>",
+                        },
+                        venue: "MBC",
+                        language: "en-US"
+                    }
+                </script>
+                
+                <script type="module" src="https://d1p5cqqchvbqmy.cloudfront.net/web2/release/mappedin-web.js"></script>
+    </body>
+</html>
+
